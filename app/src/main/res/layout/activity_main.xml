@@ -17,7 +17,7 @@
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="500dp"
         android:background="@color/colorPrimary" />
 
     <LinearLayout
@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/gilroy_bold"
-            android:text="COVID-19"
+            android:text="GO CORONA GO"
             android:textAlignment="center"
             android:textColor="@color/colorWhite"
             android:textSize="20sp" />
@@ -61,7 +61,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:fontFamily="@font/gilroy_light"
-                        android:text="INFECTED"
+                        android:text=" TOTAL INFECTED"
                         android:textAlignment="center"
                         android:textColor="@color/colorBlack"
                         android:textSize="20sp" />
@@ -72,6 +72,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/gilroy_bold"
                         android:text="4621684"
+                        android:layout_margin="6dp"
                         android:textAlignment="center"
                         android:textColor="@color/colorRed"
                         android:textSize="20sp" />
@@ -106,10 +107,19 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:fontFamily="@font/gilroy_light"
+                            android:text="TOTAL"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="20sp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/gilroy_light"
                             android:text="RECOVERED"
                             android:textAlignment="center"
                             android:textColor="@color/colorBlack"
                             android:textSize="20sp" />
+
 
                         <TextView
                             android:id="@+id/txtRecoverd"
@@ -117,6 +127,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/gilroy_bold"
                             android:text="23564"
+                            android:layout_margin="6dp"
                             android:textAlignment="center"
                             android:textColor="@color/colorGreen"
                             android:textSize="20sp" />
@@ -146,6 +157,14 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:fontFamily="@font/gilroy_light"
+                            android:text="TOTAL"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="20sp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/gilroy_light"
                             android:text="DECEASED"
                             android:textAlignment="center"
                             android:textColor="@color/colorBlack"
@@ -157,6 +176,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/gilroy_bold"
                             android:text="4621684"
+                            android:layout_margin="6dp"
                             android:textAlignment="center"
                             android:textColor="@color/colorGray"
                             android:textSize="20sp" />
@@ -164,6 +184,159 @@
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    app:cardBackgroundColor="@color/colorWhite"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@font/gilroy_light"
+                            android:text="INFECTED TODAY"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/txtTodayInfected"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/gilroy_bold"
+                            android:layout_margin="6dp"
+                            android:text="4621684"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorRed"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        app:cardBackgroundColor="@color/colorWhite"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:fontFamily="@font/gilroy_light"
+                                android:text="RECOVERED"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="20sp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/gilroy_light"
+                                android:text="TODAY"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/txtTodayRecoverd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/gilroy_bold"
+                                android:text="23564"
+                                android:layout_margin="6dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorGreen"
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        app:cardBackgroundColor="@color/colorWhite"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:fontFamily="@font/gilroy_light"
+                                android:text="DECEASED"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="20sp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:fontFamily="@font/gilroy_light"
+                                android:text="TODAY"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="20sp" />
+                            <TextView
+                                android:id="@+id/txtTodayDeceased"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/gilroy_bold"
+                                android:layout_margin="6dp"
+                                android:text="4621684"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorGray"
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
 
             </LinearLayout>
 
