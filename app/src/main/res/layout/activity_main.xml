@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/gilroy_bold"
-            android:text="GO CORONA GO"
+            android:text="GO CORONA GO "
             android:textAlignment="center"
             android:textColor="@color/colorWhite"
             android:textSize="20sp" />
@@ -61,7 +61,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:fontFamily="@font/gilroy_light"
-                        android:text=" TOTAL INFECTED"
+                        android:text=" TOTAL INFECTED 🦠"
                         android:textAlignment="center"
                         android:textColor="@color/colorBlack"
                         android:textSize="20sp" />
@@ -115,7 +115,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/gilroy_light"
-                            android:text="RECOVERED"
+                            android:text="RECOVERED 🏥 "
                             android:textAlignment="center"
                             android:textColor="@color/colorBlack"
                             android:textSize="20sp" />
@@ -165,7 +165,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/gilroy_light"
-                            android:text="DECEASED"
+                            android:text="DECEASED ⚰️ "
                             android:textAlignment="center"
                             android:textColor="@color/colorBlack"
                             android:textSize="20sp" />
@@ -212,7 +212,7 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:fontFamily="@font/gilroy_light"
-                            android:text="INFECTED TODAY"
+                            android:text="INFECTED TODAY 🦠"
                             android:textAlignment="center"
                             android:textColor="@color/colorBlack"
                             android:textSize="20sp" />
@@ -258,7 +258,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_margin="5dp"
                                 android:fontFamily="@font/gilroy_light"
-                                android:text="RECOVERED"
+                                android:text="RECOVERED "
                                 android:textAlignment="center"
                                 android:textColor="@color/colorBlack"
                                 android:textSize="20sp" />
@@ -266,7 +266,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/gilroy_light"
-                                android:text="TODAY"
+                                android:text="TODAY 🏥 "
                                 android:textAlignment="center"
                                 android:textColor="@color/colorBlack"
                                 android:textSize="20sp" />
@@ -316,7 +316,7 @@
                                 android:layout_height="wrap_content"
 
                                 android:fontFamily="@font/gilroy_light"
-                                android:text="TODAY"
+                                android:text="TODAY ⚰️ "
                                 android:textAlignment="center"
                                 android:textColor="@color/colorBlack"
                                 android:textSize="20sp" />

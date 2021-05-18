@@ -18,6 +18,7 @@ class SymptomsActivity : AppCompatActivity() {
         symptomsList.add(Model(R.drawable.fever,"Fever","Lorem Ipsum is simply dummy text of the printing and typesetting industry."))
         symptomsList.add(Model(R.drawable.pain,"Head Ache","Lorem Ipsum is simply dummy text of the printing and typesetting industry."))
         symptomsList.add(Model(R.drawable.sore_throat,"Sore Throat","Lorem Ipsum is simply dummy text of the printing and typesetting industry."))
+        symptomsList.add(Model(R.drawable.taste,"Lack of Taste or Smell","Lorem Ipsum is simply dummy text of the printing and typesetting industry."))
 
         val symptomsAdapter = SymptomsAdapter(symptomsList)
 
