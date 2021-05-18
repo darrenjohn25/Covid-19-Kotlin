@@ -73,9 +73,9 @@ class MainActivity : AppCompatActivity() {
                 txtInfected.text = jsonObject.getString("cases")
                 txtRecoverd.text = jsonObject.getString("recovered")
                 txtDeceased.text = jsonObject.getString("deaths")
-                txtTodayInfected.text = jsonObject.getString("todaycases")
-                txtTodayRecoverd.text = jsonObject.getString("todayrecovered")
-                txtTodayDeceased.text = jsonObject.getString("todaydeaths")
+             txtTodayInfected.text = jsonObject.getString("todayCases")
+              txtTodayRecoverd.text = jsonObject.getString("todayRecovered")
+           txtTodayDeceased.text = jsonObject.getString("todayDeaths")
 
             },
             Response.ErrorListener {
