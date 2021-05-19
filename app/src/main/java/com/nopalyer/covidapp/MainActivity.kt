@@ -3,6 +3,7 @@ package com.nopalyer.covidapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -44,7 +45,10 @@ class MainActivity : AppCompatActivity() {
             var intent = Intent(this@MainActivity,SymptomsActivity::class.java)
             startActivity(intent)
         }
-
+        btnKnowMoreindia.setOnClickListener {
+            var intent = Intent(this@MainActivity,KnowMoreActivity::class.java)
+            startActivity(intent)
+        }
         btnKnowMore.setOnClickListener {
             var intent = Intent(this@MainActivity,KnowMoreActivity::class.java)
             startActivity(intent)
@@ -55,40 +59,64 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-
+        getGlobaltodayData()
         getGlobalData()
     }
+   fun getGlobaltodayData(){
+       val url:String ="https://covid19.mathdro.id/api/countries/INDIA"
 
-    fun getGlobalData(){
-        val url:String ="https://corona.lmao.ninja/v2/all/"
+       val stringRequest = StringRequest(
+           Request.Method.GET,
+           url,
+           Response.Listener<String> {
 
-        val stringRequest = StringRequest(
-            Request.Method.GET,
-            url,
-            Response.Listener<String> {
+               var jsonObject = JSONObject(it.toString())
+               var confirmed = JSONObject(jsonObject.getString("confirmed").toString())
+               var recovered = JSONObject(jsonObject.getString("recovered").toString())
+               var deaths = JSONObject(jsonObject.getString("deaths").toString())
+               Log.i("MainActivity","today - "+confirmed.getString("value"))
+              txtTodayInfected.text = confirmed.getString("value")
+              txtTodayRecoverd.text = recovered.getString("value")
+              txtTodayDeceased.text = deaths.getString("value")
+           },
+           Response.ErrorListener {
+               Toast.makeText(this@MainActivity,it.toString(),Toast.LENGTH_LONG).show()
+               txtInfected.text = "-"
+               txtRecoverd.text = "-"
+               txtDeceased.text = "-"
 
-                var jsonObject = JSONObject(it.toString())
+           }
+       )
 
-                //now set values in textview
-                txtInfected.text = jsonObject.getString("cases")
-                txtRecoverd.text = jsonObject.getString("recovered")
-                txtDeceased.text = jsonObject.getString("deaths")
-             txtTodayInfected.text = jsonObject.getString("todayCases")
-              txtTodayRecoverd.text = jsonObject.getString("todayRecovered")
-           txtTodayDeceased.text = jsonObject.getString("todayDeaths")
+       val requestQueue = Volley.newRequestQueue(this@MainActivity)
+       requestQueue.add(stringRequest)
+   }
 
-            },
-            Response.ErrorListener {
-                Toast.makeText(this@MainActivity,it.toString(),Toast.LENGTH_LONG).show()
-                txtInfected.text = "-"
-                txtRecoverd.text = "-"
-                txtDeceased.text = "-"
+   fun getGlobalData(){
+       val url:String ="https://covid19.mathdro.id/api"
 
-            }
-        )
+       val stringRequest = StringRequest(
+           Request.Method.GET,
+           url,
+           Response.Listener<String> {
+               var jsonObject = JSONObject(it.toString())
+               var confirmed = JSONObject(jsonObject.getString("confirmed").toString())
+               var recovered = JSONObject(jsonObject.getString("recovered").toString())
+               var deaths = JSONObject(jsonObject.getString("deaths").toString())
+               //now set values in textview
+               txtInfected.text = confirmed.getString("value")
+               txtRecoverd.text = recovered.getString("value")
+               txtDeceased.text = deaths.getString("value")
+           },
+           Response.ErrorListener {
+               Toast.makeText(this@MainActivity,it.toString(),Toast.LENGTH_LONG).show()
+               txtInfected.text = "-"
+               txtRecoverd.text = "-"
+               txtDeceased.text = "-"
+           }
+       )
 
-        val requestQueue = Volley.newRequestQueue(this@MainActivity)
-        requestQueue.add(stringRequest)
-    }
-
+       val requestQueue = Volley.newRequestQueue(this@MainActivity)
+       requestQueue.add(stringRequest)
+   }
 }
