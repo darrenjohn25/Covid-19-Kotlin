@@ -14,11 +14,11 @@ class PrecautionActivity : AppCompatActivity() {
 
         recyclerView.layoutManager = LinearLayoutManager(this,LinearLayout.VERTICAL,false)
         val precautionsList = ArrayList<Model>()
-        precautionsList.add(Model(R.drawable.soap,"Hand Wash","Lorem Ipsum is simply dummy text of the printing and typesetting industry."))
-        precautionsList.add(Model(R.drawable.hone,"Stay Home","Lorem Ipsum is simply dummy text of the printing and typesetting industry."))
-        precautionsList.add(Model(R.drawable.distance,"Social Distance","Lorem Ipsum is simply dummy text of the printing and typesetting industry."))
-        precautionsList.add(Model(R.drawable.clean,"Clean Object & Surface","Lorem Ipsum is simply dummy text of the printing and typesetting industry."))
-        precautionsList.add(Model(R.drawable.cover,"Avoid Touching","Lorem Ipsum is simply dummy text of the printing and typesetting industry."))
+        precautionsList.add(Model(R.drawable.soap,"Hand Wash","Clean your hands often. Use soap and water, or an alcohol-based hand rub."))
+        precautionsList.add(Model(R.drawable.hone,"Stay Home","Stay home if you feel unwell."))
+        precautionsList.add(Model(R.drawable.distance,"Social Distance","Maintain a safe distance from anyone who is coughing or sneezing."))
+        precautionsList.add(Model(R.drawable.clean,"Clean Object & Surface","Sanitize the surface before you touch"))
+        precautionsList.add(Model(R.drawable.cover,"Avoid Touching","Don’t touch your eyes, nose or mouth and Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze."))
 
         val precautionsAdapter = PrecautionsAdapter(precautionsList)
 

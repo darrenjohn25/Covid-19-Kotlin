@@ -22,9 +22,9 @@ class MainActivity : AppCompatActivity() {
 
         recyclerView.layoutManager = LinearLayoutManager(this,LinearLayout.HORIZONTAL,false)
         val symptomsList = ArrayList<Model>()
-        symptomsList.add(Model(R.drawable.cough,"Dry Cough","Lorem Ipsum is simply dummy text of the printing and typesetting industry."))
-        symptomsList.add(Model(R.drawable.fever,"Fever","Lorem Ipsum is simply dummy text of the printing and typesetting industry."))
-        symptomsList.add(Model(R.drawable.pain,"Head Ache","Lorem Ipsum is simply dummy text of the printing and typesetting industry."))
+        symptomsList.add(Model(R.drawable.cough,"Dry Cough","Dry cough is one where no mucus or phlegm is produced."))
+        symptomsList.add(Model(R.drawable.fever,"Fever","It is usually a sign that your body is trying to fight an illness or infection."))
+        symptomsList.add(Model(R.drawable.pain,"Head Ache","Messages sent to the brain while muscles or blood vessels swell, tighten etc.. causes headache"))
 
         val symptomsAdapter = SymptomsAdapter(symptomsList)
 
@@ -33,10 +33,10 @@ class MainActivity : AppCompatActivity() {
 
         recyclerViewPrecautions.layoutManager = LinearLayoutManager(this,LinearLayout.HORIZONTAL,false)
         val precautionsList = ArrayList<Model>()
-        precautionsList.add(Model(R.drawable.soap,"Hand Wash","Lorem Ipsum is simply dummy text of the printing and typesetting industry."))
-        precautionsList.add(Model(R.drawable.hone,"Stay Home","Lorem Ipsum is simply dummy text of the printing and typesetting industry."))
-        precautionsList.add(Model(R.drawable.distance,"Social Distance","Lorem Ipsum is simply dummy text of the printing and typesetting industry."))
-     
+        precautionsList.add(Model(R.drawable.soap,"Hand Wash","Clean your hands often. Use soap and water, or an alcohol-based hand rub."))
+        precautionsList.add(Model(R.drawable.hone,"Stay Home","Stay home if you feel unwell."))
+        precautionsList.add(Model(R.drawable.distance,"Social Distance","Maintain a safe distance from anyone who is coughing or sneezing."))
+
         val precautionsAdapter = PrecautionsAdapter(precautionsList)
 
         recyclerViewPrecautions.adapter = precautionsAdapter
