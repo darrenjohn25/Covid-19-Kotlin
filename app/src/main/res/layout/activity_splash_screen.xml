@@ -23,23 +23,13 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="COVID-19"
+            android:text="GO CORONA "
             android:textSize="30sp"
-            android:layout_margin="5dp"
+            android:layout_margin="15dp"
             android:fontFamily="@font/gilroy_bold"
             android:textColor="@color/colorWhite"
             android:textAlignment="center"/>
 
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/about_covid"
-            android:textSize="15sp"
-            android:layout_margin="5dp"
-            android:fontFamily="@font/gilroy_light"
-            android:textColor="@color/colorWhite"
-            android:textAlignment="center"/>
     </LinearLayout>
 
 

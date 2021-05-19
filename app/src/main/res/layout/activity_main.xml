@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/gilroy_bold"
-            android:text="GO CORONA GO "
+            android:text="GO CORONA"
             android:textAlignment="center"
             android:textColor="@color/colorWhite"
             android:textSize="20sp" />
