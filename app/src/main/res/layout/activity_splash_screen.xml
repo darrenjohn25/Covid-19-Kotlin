@@ -23,7 +23,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="GO CORONA "
+            android:text="COVID TRACKER"
             android:textSize="30sp"
             android:layout_margin="15dp"
             android:fontFamily="@font/gilroy_bold"
