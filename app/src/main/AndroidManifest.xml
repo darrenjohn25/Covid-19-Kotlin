@@ -14,6 +14,7 @@
         <activity android:name=".PrecautionActivity"></activity>
         <activity android:name=".SymptomsActivity" />
         <activity android:name=".KnowMoreActivity" />
+        <activity android:name=".KnowMoreIndiaActivity" />
 
         <uses-library
             android:name="org.apache.http.legacy"
