@@ -373,21 +373,21 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:fontFamily="@font/gilroy_bold"
-                        android:text="To Know More About India COVID - 19 Case"
+                        android:text="To Know About India COVID - 19 Cases"
                         android:textColor="@color/colorWhite"
                         android:textSize="20sp" />
 
                     <Button
                         android:id="@+id/btnKnowMoreindia"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="37dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
                         android:background="@color/colorDarkBlue"
                         android:fontFamily="@font/gilroy_bold"
                         android:paddingLeft="20dp"
                         android:paddingRight="20dp"
-                        android:text="More Info"
+                        android:text="Click Here"
                         android:textAllCaps="false"
                         android:textColor="@color/colorWhite"
                         android:textSize="14sp" />
